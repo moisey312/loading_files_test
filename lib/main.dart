@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:loading_files_test/ui/homeScreen.dart';
 
 void main() {
   runApp(MyApp());
@@ -28,14 +29,15 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  @override
+  void initState() {
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Container(), // This trailing comma makes auto-formatting nicer for build methods.
+      body: HomeScreen(),
     );
   }
 }
